@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Vayusat | ISRO IN-SPACe CanSat & Rocketry 2026</title>
+    <meta name="description" content="Official website of Team Vayusat representing Dayananda Sagar University in the ISRO IN-SPACe Model Rocketry & CAN-7USAT Competition 2026. Securing 2nd Place nationally in the previous edition.">
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Starry Background Canvas -->
+    <canvas id="starfield"></canvas>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/logo.png" alt="Vayusat Logo" class="logo-img">
+                <span class="logo-text">Vayusat</span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#specs" class="nav-link">Specs</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="#media" class="nav-link">Media</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <button class="mobile-menu-btn" aria-label="Toggle Menu" id="menuBtn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Side Drawer -->
+    <div class="mobile-drawer" id="mobileDrawer">
+        <nav class="drawer-links">
+            <a href="#about" class="drawer-link">About</a>
+            <a href="#specs" class="drawer-link">Specs</a>
+            <a href="#achievements" class="drawer-link">Achievements</a>
+            <a href="#team" class="drawer-link">Team</a>
+            <a href="#media" class="drawer-link">Media</a>
+            <a href="#contact" class="drawer-link">Contact</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="hero-glow-1"></div>
+            <div class="hero-glow-2"></div>
+            
+            <div class="hero-content">
+                <div class="competition-badge animate-fade-in">
+                    <i data-lucide="orbit" class="badge-icon"></i>
+                    <span>IN-SPACe CanSat Rocketry 2026</span>
+                </div>
+                
+                <h1 class="hero-title animate-slide-up">
+                    Team <span class="gradient-text">Vayusat</span>
+                </h1>
+                
+                <p class="hero-subtitle animate-slide-up-delay">
+                    Pioneering atmospheric innovation and aerospace engineering through advanced CanSat technology and model rocketry. Representing Dayananda Sagar University in ISRO's national arena.
+                </p>
+                
+                <div class="hero-ctas animate-slide-up-delay-2">
+                    <a href="#about" class="btn btn-primary">
+                        <span>About</span>
+                        <i data-lucide="arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Interactive Scroll Indicator -->
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll to explore</span>
+                <div class="mouse-icon">
+                    <div class="wheel"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About & Mission Briefing Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text-content">
+                        <div class="section-tag"><i data-lucide="rocket"></i> The Challenge</div>
+                        <h2>IN-SPACe Model Rocketry & CAN-7USAT 2026</h2>
+                        <p>Organized by the <strong>Indian National Space Promotion and Authorization Centre (IN-SPACe)</strong> under the Department of Space, this premier competition challenges students to conceptualize, fabricate, and launch model satellites and rockets.</p>
+                        <p>Our dual-track mission focuses on pushing boundaries in two advanced aerospace frontiers:</p>
+                        
+                        <div class="mission-bullets">
+                            <div class="m-bullet">
+                                <div class="m-bullet-icon"><i data-lucide="satellite"></i></div>
+                                <div class="m-bullet-desc">
+                                    <h4>CAN-7USAT Integration</h4>
+                                    <p>Designing a high-fidelity Can-sized (7U) satellite limited to 1 kg, loaded with advanced atmospheric data recorders, designed to survive a 1,000m rocket launch and deploy safely.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="m-bullet">
+                                <div class="m-bullet-icon"><i data-lucide="shield-alert"></i></div>
+                                <div class="m-bullet-desc">
+                                    <h4>Precision Ejection & Recovery</h4>
+                                    <p>Achieving autonomous landing precision and real-time telemetry streaming through customized mechanical deployment and state-of-the-art radio communication link.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Beautiful Showcase Frame with Realistic CanSat Prototype -->
+                    <div class="about-showcase">
+                        <div class="showcase-glow"></div>
+                        <div class="about-showcase-grid">
+                            <div class="showcase-frame glass-panel">
+                                <img src="assets/gallery1.jpg" alt="Team Vayusat White CanSat Module" class="showcase-img">
+                                <div class="showcase-caption">
+                                    <i data-lucide="satellite"></i>
+                                    <span>7U CanSat White Calibration Module</span>
+                                </div>
+                            </div>
+                            <div class="showcase-frame glass-panel">
+                                <img src="assets/gallery23.jpg" alt="Team Vayusat Red Branded CanSat Module" class="showcase-img">
+                                <div class="showcase-caption">
+                                    <i data-lucide="satellite"></i>
+                                    <span>7U CanSat Branded Flight Cylinder</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Specs Section -->
+        <section class="specs-section" id="specs">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag"><i data-lucide="cpu"></i> Engineering specs</div>
+                    <h2>The CanSat Architecture</h2>
+                    <p class="section-description">A state-of-the-art multi-disciplinary satellite sub-system integrating electronics, COMMs, structure, and fluid dynamics.</p>
+                </div>
+
+                <div class="specs-grid">
+                    <!-- Tech Spec Card 1 -->
+                    <div class="spec-card glass-panel">
+                        <div class="spec-icon-box cyan"><i data-lucide="radio"></i></div>
+                        <h3>COMMs & Telemetry</h3>
+                        <p>Operating on a specialized 433 MHz RF transceiver network, streaming sensor coordinates and structural health packets in real time directly to our customized ground station dashboard.</p>
+                        <ul class="spec-list">
+                            <li><i data-lucide="check"></i> 1 Hz Packet Rate</li>
+                            <li><i data-lucide="check"></i> Custom Helix Antenna</li>
+                            <li><i data-lucide="check"></i> Ground Station Software Integration</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tech Spec Card 2 -->
+                    <div class="spec-card glass-panel">
+                        <div class="spec-icon-box blue"><i data-lucide="binary"></i></div>
+                        <h3>Electronics & Payload</h3>
+                        <p>Powered by a dual-controller architecture on a custom-designed double-sided PCB. Tracks temperature, pressure, relative altitude, acceleration, and GPS coordinates.</p>
+                        <ul class="spec-list">
+                            <li><i data-lucide="check"></i> BMP280 Altitude Sensor</li>
+                            <li><i data-lucide="check"></i> MPU6050 Accelerometer/Gyro</li>
+                            <li><i data-lucide="check"></i> Dynamic SD-Card Data Mirroring</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tech Spec Card 3 -->
+                    <div class="spec-card glass-panel">
+                        <div class="spec-icon-box purple"><i data-lucide="box"></i></div>
+                        <h3>Structure & Aerodynamics</h3>
+                        <p>Built with robust and lightweight 3D-printed composite components. Features impact-absorbent structure cells to shield internal electronics during hard landing deceleration.</p>
+                        <ul class="spec-list">
+                            <li><i data-lucide="check"></i> Carbon-Fiber Reinforced Filament</li>
+                            <li><i data-lucide="check"></i> 7U Standardized Form Factor</li>
+                            <li><i data-lucide="check"></i> Under 1.0kg Weight Compliance</li>
+                        </ul>
+                    </div>
+
+                    <!-- Tech Spec Card 4 -->
+                    <div class="spec-card glass-panel">
+                        <div class="spec-icon-box green"><i data-lucide="wind"></i></div>
+                        <h3>Controlled Recovery</h3>
+                        <p>Utilizes an autonomous dual-parachute recovery system. Deploys a main parachute at optimal ejection altitude, followed by an active landing control mechanism.</p>
+                        <ul class="spec-list">
+                            <li><i data-lucide="check"></i> Servo-Driven Release Mechanism</li>
+                            <li><i data-lucide="check"></i> Cross-Parachute Stabilizer</li>
+                            <li><i data-lucide="check"></i> Safe descent speed (< 5 m/s)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section class="achievements-section" id="achievements">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag"><i data-lucide="trophy"></i> National Glory</div>
+                    <h2>Our Accomplishments</h2>
+                    <p class="section-description">A testament to our technical rigorousness, teamwork, and commitment to pioneering space technology in India.</p>
+                </div>
+
+                <div class="achievements-grid">
+                    <!-- Main Trophy Card -->
+                    <div class="trophy-card glass-panel">
+                        <div class="trophy-glow"></div>
+                        <div class="trophy-icon-container">
+                            <i data-lucide="award" class="trophy-svg"></i>
+                        </div>
+                        <div class="trophy-details">
+                            <span class="trophy-badge">CAN-7USAT INDIA 2025</span>
+                            <h3>National 2nd Place Winners</h3>
+                            <p>Secured the runner-up position in the national finals of the prestigious student space competition organized by the Indian National Space Promotion and Authorization Centre (IN-SPACe), competing against India's top engineering institutions.</p>
+                            <div class="trophy-stats">
+                                <div class="t-stat">
+                                    <span class="stat-num">98.4%</span>
+                                    <span class="stat-lbl">Telemetry Accuracy</span>
+                                </div>
+                                <div class="t-stat">
+                                    <span class="stat-num">0.8m</span>
+                                    <span class="stat-lbl">Landing Precision</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Metrics / Numbers Grid -->
+                    <div class="metrics-container">
+                        <div class="metric-card glass-panel">
+                            <i data-lucide="chevrons-up" class="metric-icon blue"></i>
+                            <div class="metric-info">
+                                <span class="metric-val" data-target="1000">0</span><span class="metric-unit">m</span>
+                                <span class="metric-label">Launch Altitude</span>
+                            </div>
+                        </div>
+                        
+                        <div class="metric-card glass-panel">
+                            <i data-lucide="scale" class="metric-icon purple"></i>
+                            <div class="metric-info">
+                                <span class="metric-val" data-target="1.0">0</span><span class="metric-unit">kg</span>
+                                <span class="metric-label">Satellite Mass</span>
+                            </div>
+                        </div>
+                        <div class="metric-card glass-panel">
+                            <i data-lucide="gauge" class="metric-icon green"></i>
+                            <div class="metric-info">
+                                <span class="metric-val" data-target="1">0</span><span class="metric-unit">Hz</span>
+                                <span class="metric-label">Data Transmission Rate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Team Section -->
+        <section class="team-section" id="team">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag"><i data-lucide="users"></i> The Engineers</div>
+                    <h2>Meet Team Vayusat</h2>
+                    <p class="section-description">A multidisciplinary team of engineering undergraduates from Dayananda Sagar University collaborating to conquer aerospace challenges.</p>
+                </div>
+
+                <!-- Faculty Adviser Spotlight -->
+                <div class="adviser-container text-center animate-scroll">
+                    <span class="adviser-tag">Project Mentor</span>
+                    <div class="team-card glass-panel">
+                        <div class="card-glow"></div>
+                        <div class="member-avatar">
+                            <img src="assets/adviser.jpg" alt="Dr. Prashantha Kumar" class="member-img">
+                        </div>
+                        <h3>Dr. Prashantha Kumar</h3>
+                        <span class="member-role">Faculty Adviser</span>
+                        <p class="member-desc">Department of Aerospace Engineering, DSU</p>
+                    </div>
+                </div>
+
+                <div class="team-grid">
+                    <!-- Charan Raj -->
+                    <div class="team-card glass-panel animate-scroll">
+                        <div class="card-glow"></div>
+                        <div class="member-avatar">
+                            <img src="assets/charan.jpg" alt="Charan Raj" class="member-img charan-img">
+                        </div>
+                        <h3>Charan Raj</h3>
+                        <span class="member-role">Project Lead</span>
+                        <p class="member-desc">Systems Integration & Project Management</p>
+                    </div>
+
+                    <!-- Keertan -->
+                    <div class="team-card glass-panel animate-scroll">
+                        <div class="card-glow"></div>
+                        <div class="member-avatar">
+                            <img src="assets/keertan.jpg" alt="Keertan" class="member-img">
+                        </div>
+                        <h3>Keertan</h3>
+                        <span class="member-role">Electronics</span>
+                        <p class="member-desc">Circuit Design & Sensor Integration</p>
+                    </div>
+
+                    <!-- Saatvik -->
+                    <div class="team-card glass-panel animate-scroll">
+                        <div class="card-glow"></div>
+                        <div class="member-avatar">
+                            <img src="assets/saatvik.jpg" alt="Saatvik" class="member-img">
+                        </div>
+                        <h3>Saatvik</h3>
+                        <span class="member-role">Electronics</span>
+                        <p class="member-desc">PCB Design & Component Testing</p>
+                    </div>
+
+                    <!-- Pragati -->
+                    <div class="team-card glass-panel animate-scroll">
+                        <div class="card-glow"></div>
+                        <div class="member-avatar">
+                            <img src="assets/pragati.jpg" alt="Pragati" class="member-img pragati-img">
+                        </div>
+                        <h3>Pragati</h3>
+                        <span class="member-role">Structures</span>
+                        <p class="member-desc">Power Systems & Data Acquisition</p>
+                    </div>
+
+                    <!-- Diya -->
+                    <div class="team-card glass-panel animate-scroll">
+                        <div class="card-glow"></div>
+                        <div class="member-avatar">
+                            <img src="assets/diya.jpg" alt="Diya" class="member-img diya-img">
+                        </div>
+                        <h3>Diya</h3>
+                        <span class="member-role">Structures</span>
+                        <p class="member-desc">Mechanical Design & Assembly</p>
+                    </div>
+
+                    <!-- Manya -->
+                    <div class="team-card glass-panel animate-scroll">
+                        <div class="card-glow"></div>
+                        <div class="member-avatar">
+                            <img src="assets/manya.jpg" alt="Manya" class="member-img manya-img">
+                        </div>
+                        <h3>Manya</h3>
+                        <span class="member-role">Structures</span>
+                        <p class="member-desc">Structural Analysis & Recovery Systems</p>
+                    </div>
+
+                    <!-- Shylesh -->
+                    <div class="team-card glass-panel animate-scroll">
+                        <div class="card-glow"></div>
+                        <div class="member-avatar">
+                            <img src="assets/shylesh.jpg" alt="Shylesh" class="member-img shylesh-img">
+                        </div>
+                        <h3>Shylesh</h3>
+                        <span class="member-role">COMMs & Ground Station</span>
+                        <p class="member-desc">Telemetry & RF Communication</p>
+                    </div>
+
+                    <!-- Kelvin -->
+                    <div class="team-card glass-panel animate-scroll">
+                        <div class="card-glow"></div>
+                        <div class="member-avatar">
+                            <img src="assets/kelvin.jpg" alt="Kelvin" class="member-img kelvin-img">
+                        </div>
+                        <h3>Kelvin</h3>
+                        <span class="member-role">COMMs & Ground Station</span>
+                        <p class="member-desc">Ground Station Setup & Data Reception</p>
+                    </div>
+                </div>
+
+                <!-- Showcase of Rocket Launch Action Shot -->
+                <div class="gallery-wrapper text-center">
+                    <span class="gallery-tag">MISSION IN ACTION</span>
+                    <div class="gallery-frame glass-panel">
+                        <img src="assets/rocket_launch_action.jpg" alt="Team Vayusat with Luna MK-III Rocket on Launch Rail" class="gallery-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Media Section -->
+        <section class="media-section" id="media">
+            <div class="container">
+                <div class="section-header text-center">
+                    <div class="section-tag"><i data-lucide="images"></i> Mission Chronicles</div>
+                    <h2>Our Past Year Journey</h2>
+                    <p class="section-description">A visual archive of Team Vayusat's key design, assembly, electronics testing, and on-field model rocketry accomplishments.</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <!-- Gallery Item 1 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(0)">
+                        <img src="assets/gallery1.jpg" alt="Vayusat CanSat Avionics Assembly" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>Avionics Assembly</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(1)">
+                        <img src="assets/gallery2.jpg" alt="DSU Laboratory Team Display" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>Aerospace Rocket Model</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(2)">
+                        <img src="assets/gallery3.jpg" alt="Team Discussion in Aerospace Lab" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>Faculty Consultation</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 4 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(3)">
+                        <img src="assets/gallery4.jpg" alt="Parachute Recovery Preparation" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>Parachute Preparation</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 5 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(4)">
+                        <img src="assets/gallery5.jpg" alt="IN-SPACe National Competition Field" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>IN-SPACe National Finals</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 6 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(5)">
+                        <img src="assets/gallery6.jpg" alt="Model Rocket Nosecone Approval Seal" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>Nosecone Inspection</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 7 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(6)">
+                        <img src="assets/gallery7.jpg" alt="Team Selfie with Digital Twin Rocket Model" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>Team Selfie</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 8 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(7)">
+                        <img src="assets/gallery8.jpg" alt="Rocket Assembly and Fin Adjustments" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>Fin Calibration</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 9 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(8)">
+                        <img src="assets/gallery9.jpg" alt="Team Vayusat at the Launch Hangar" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>Hangar Posing</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 10 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(9)">
+                        <img src="assets/gallery10.jpg" alt="Solid Propulsion Model Rocket Display" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>DSU Rocket Showcase</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 11 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(10)">
+                        <img src="assets/gallery11.jpg" alt="DSU Rocket Standing on Thrust Tech India Launch Pad" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>On-Rail Launch Pad</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 12 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(11)">
+                        <img src="assets/gallery12.jpg" alt="Team Vayusat Receiving Competition Award" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>Award Ceremony</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 13 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(12)">
+                        <img src="assets/gallery13.jpg" alt="Team Vayusat posing with Luna MK-III Rocket" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>Luna MK-III Prep</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 14 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(13)">
+                        <img src="assets/gallery14.jpg" alt="National Model Rocketry Exhibition Stand" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>Rocket Exhibition</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 15 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(14)">
+                        <img src="assets/gallery15.jpg" alt="Vayusat Team and Dignitaries at the Exhibition" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>Exhibition Gathering</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 16 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(15)">
+                        <img src="assets/gallery16.jpg" alt="Ground Station Telemetry & Launch Feeds Monitoring" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>Live Launch Monitoring</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 17 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(16)">
+                        <img src="assets/gallery17.jpg" alt="CanSat Design Presentation to Jury Panel" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>Jury Evaluation</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 18 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(17)">
+                        <img src="assets/gallery18.jpg" alt="Recovery System Integration & Canopy Lines" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>CanSat Recovery System</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 19 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(18)">
+                        <img src="assets/gallery19.jpg" alt="Luna MK-III Avionics Bay Inspection" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>Payload Wire Audit</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 20 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(19)">
+                        <img src="assets/gallery20.jpg" alt="IN-SPACe CanSat India Trophy Close-up" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>National Trophy Close-up</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 21 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(20)">
+                        <img src="assets/gallery21.jpg" alt="Red 7U CanSat Model with Landing Legs" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>Deployable Landing Legs</span>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 22 -->
+                    <div class="gallery-item glass-panel animate-scroll" onclick="openLightbox(21)">
+                        <img src="assets/gallery22.jpg" alt="Team Vayusat Stage Celebration with Trophy" class="gallery-photo">
+                        <div class="gallery-overlay">
+                            <i data-lucide="expand"></i>
+                            <span>Stage Celebration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox Modal Overlay -->
+        <div class="lightbox-overlay" id="lightboxModal" onclick="closeLightbox(event)">
+            <button class="lightbox-close-btn" aria-label="Close Lightbox" onclick="closeLightbox(event)">
+                <i data-lucide="x"></i>
+            </button>
+            <button class="lightbox-nav-btn prev" aria-label="Previous Image" onclick="navigateLightbox(-1, event)">
+                <i data-lucide="chevron-left"></i>
+            </button>
+            <img src="" alt="" class="lightbox-img" id="lightboxImg">
+            <button class="lightbox-nav-btn next" aria-label="Next Image" onclick="navigateLightbox(1, event)">
+                <i data-lucide="chevron-right"></i>
+            </button>
+            <div class="lightbox-caption" id="lightboxCaption"></div>
+        </div>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-single-wrapper">
+                    <!-- DSU and Institution Info -->
+                    <div class="contact-info-panel glass-panel">
+                        <div class="info-glow"></div>
+                        <div class="info-header text-center">
+                            <div class="section-tag"><i data-lucide="map-pin"></i> Base Camp</div>
+                            <h2>Get In Touch</h2>
+                            <p>Interested in our aerospace research, sponsorship opportunities, or technical details? We would love to collaborate with you.</p>
+                        </div>
+                        
+                        <div class="info-details-list">
+                            <div class="info-item">
+                                <i data-lucide="building" class="info-icon"></i>
+                                <div class="info-text">
+                                    <h4>Institution</h4>
+                                    <p>Dayananda Sagar University</p>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <i data-lucide="mail" class="info-icon"></i>
+                                <div class="info-text">
+                                    <h4>Email Contact</h4>
+                                    <a href="mailto:eng23as0002@dsu.edu.in">eng23as0002@dsu.edu.in</a>
+                                </div>
+                            </div>
+
+                            <div class="info-item">
+                                <i data-lucide="globe" class="info-icon"></i>
+                                <div class="info-text">
+                                    <h4>Location</h4>
+                                    <p>DSU Main Campus, Bengaluru, Karnataka, India</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Mini map mock or decorative element -->
+                        <div class="decor-sat-box justify-center">
+                            <i data-lucide="satellite-dish" class="radar-ping"></i>
+                            <span>COMMs System Active</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-left">
+                <img src="assets/logo.png" alt="Vayusat Badge" class="footer-logo">
+                <div>
+                    <h3>Team Vayusat</h3>
+                    <p>Dayananda Sagar University</p>
+                </div>
+            </div>
+            
+            <div class="footer-right">
+                <p>&copy; 2026 Team Vayusat. All rights reserved.</p>
+                <span class="footer-tag">IN-SPACe CanSat Rocketry 2026</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="app.js"></script>
+</body>
+</html>
